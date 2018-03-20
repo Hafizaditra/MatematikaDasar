@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FD834A1F-5F63-BA07-429C-AF363E808F4F}</ProjectGuid>
+    <ProjectGuid>{9B54649F-FCAD-9EAC-B233-0148486FE4C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterBehaviour.cs" />
-     <Compile Include="Assets\Scripts\CharacterCollisionHandler.cs" />
+     <Compile Include="Assets\Scripts\GroundCollisionHandler.cs" />
+     <Compile Include="Assets\Scripts\JamurJatuh.cs" />
+     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\SwapingPlatform.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity 5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

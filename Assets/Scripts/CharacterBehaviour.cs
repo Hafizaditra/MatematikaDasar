@@ -46,12 +46,22 @@ public class CharacterBehaviour : MonoBehaviour {
 			}
 		}
 
-		if (character.GetComponent<CharacterCollisionHandler>().onGround) {
+		if (character.GetComponent<GroundCollisionHandler>().onGround) {
 			character.GetComponent<Animator> ().SetBool ("Jump", false);
 		}
 
-		if (character.GetComponent<CharacterCollisionHandler> ().onGround) {
+		if (character.GetComponent<GroundCollisionHandler> ().onGround) {
 			jumpCount = 0;
+		}
+	}
+
+	void FixedUpdate () {
+		if (!character.GetComponent<GroundCollisionHandler> ().onGround) {
+			if (character.GetComponent<Rigidbody2D> ().velocity.y < 0) {
+				character.GetComponent<Rigidbody2D> ().gravityScale = 2.5f;
+			}
+		} else {
+			character.GetComponent<Rigidbody2D> ().gravityScale = 1;
 		}
 	}
 
@@ -79,15 +89,9 @@ public class CharacterBehaviour : MonoBehaviour {
 		
 	public void Jump () {
 		if (jumpCount < 2) {
-			character.GetComponent<CharacterCollisionHandler> ().onGround = false;
-			Vector2 jumpForce;
-			if (faceLeft) {
-				jumpForce = new Vector2 (2, 5);
-			} else {
-				jumpForce = new Vector2 (-2, 5);
-			}
+			character.GetComponent<GroundCollisionHandler> ().onGround = false;
 			character.GetComponent<Animator> ().SetBool ("Jump", true);
-			character.GetComponent<Rigidbody2D> ().AddForce (jumpForce * 60);
+			character.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * 200);
 			jumpCount++;
 		}
 	}
@@ -95,12 +99,5 @@ public class CharacterBehaviour : MonoBehaviour {
 	public void Attack () {
 		attacking = true;
 		character.GetComponent<Animator> ().SetBool ("Attack", true);
-		Vector2 attackForce;
-		if (faceLeft) {
-			attackForce = new Vector2 (3, 0);
-		} else {
-			attackForce = new Vector2 (-3, 0);
-		}
-		character.GetComponent<Rigidbody2D> ().AddForce (attackForce * 100);
 	}
 }
