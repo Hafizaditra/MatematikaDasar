@@ -21,6 +21,7 @@ public class JamurJatuh : MonoBehaviour {
 					this.transform.GetChild (i).gameObject.GetComponent<Rigidbody2D> ().gravityScale = 0;
 					this.transform.GetChild (i).gameObject.GetComponent<CircleCollider2D> ().isTrigger = true;
 					this.transform.GetChild (i).gameObject.GetComponent<SpriteRenderer> ().sortingOrder = 9;
+					this.transform.GetChild (i).gameObject.GetComponent<Rigidbody2D> ().bodyType = RigidbodyType2D.Static;
 				}
 			}
 		}

@@ -7,17 +7,19 @@ public class CharacterBehaviour : MonoBehaviour {
 	//walking
 	bool walkingLeft = false;
 	bool walkingRight = false;
-	float speed = 5;
+	float speed = 7;
 	bool faceLeft = true;
 	public bool cameraFollow = false;
 
 	//attack
-	bool attacking = false;
-	float attackTime = 1f;
+	public static bool attacking = false;
+	public static float attackTime = 1f;
+	public static bool isHurt = false;
+	public static float hurtTime = 1f;
 
 	//jump
 	int jumpCount = 0;
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (cameraFollow) {
@@ -38,13 +40,27 @@ public class CharacterBehaviour : MonoBehaviour {
 		}
 
 		if (attacking) {
+			character.GetComponent<Animator> ().SetBool ("Attack", true);
 			attackTime -= Time.deltaTime;
 			if (attackTime <= 0) {
 				attacking = false;
-				character.GetComponent<Animator> ().SetBool ("Attack", false);
-				attackTime = 1;
 			}
+		} else {
+			character.GetComponent<Animator> ().SetBool ("Attack", false);
+			attackTime = 1;			
 		}
+
+		if (isHurt) {
+			character.GetComponent<Animator> ().SetBool ("Hurt", true);
+			hurtTime -= Time.deltaTime;
+			if (hurtTime <= 0) {
+				isHurt = false;
+			}
+		} else {
+			character.GetComponent<Animator> ().SetBool ("Hurt", false);
+			hurtTime = 1;
+		}
+
 
 		if (character.GetComponent<GroundCollisionHandler>().onGround) {
 			character.GetComponent<Animator> ().SetBool ("Jump", false);
@@ -58,7 +74,7 @@ public class CharacterBehaviour : MonoBehaviour {
 	void FixedUpdate () {
 		if (!character.GetComponent<GroundCollisionHandler> ().onGround) {
 			if (character.GetComponent<Rigidbody2D> ().velocity.y < 0) {
-				character.GetComponent<Rigidbody2D> ().gravityScale = 2.5f;
+				character.GetComponent<Rigidbody2D> ().gravityScale = 3.5f;
 			}
 		} else {
 			character.GetComponent<Rigidbody2D> ().gravityScale = 1;
@@ -98,6 +114,5 @@ public class CharacterBehaviour : MonoBehaviour {
 
 	public void Attack () {
 		attacking = true;
-		character.GetComponent<Animator> ().SetBool ("Attack", true);
 	}
 }
