@@ -1,9 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterBehaviour : MonoBehaviour {
+	public List<GameObject> characters = new List<GameObject>();
 	public GameObject character;
+
+	void Awake () {
+		Time.timeScale = 1;
+		int index = PlayerPrefs.GetInt ("PlayedChara", 1) - 1;
+		character = characters [index];
+		character.SetActive (true);
+	}
 	//walking
 	bool walkingLeft = false;
 	bool walkingRight = false;
@@ -19,6 +28,7 @@ public class CharacterBehaviour : MonoBehaviour {
 
 	//jump
 	int jumpCount = 0;
+
 
 	// Update is called once per frame
 	void Update () {
@@ -114,5 +124,22 @@ public class CharacterBehaviour : MonoBehaviour {
 
 	public void Attack () {
 		attacking = true;
+	}
+
+	[Header("Gameplay")]
+	public GameObject canvasPause;
+
+	public void Pause () {
+		Time.timeScale = 0;
+		canvasPause.SetActive (true);
+	}
+
+	public void Resume () {
+		Time.timeScale = 1;
+		canvasPause.SetActive (false);
+	}
+
+	public void Exit () {
+		SceneManager.LoadScene ("MainMenu");
 	}
 }

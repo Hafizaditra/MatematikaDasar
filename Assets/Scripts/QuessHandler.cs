@@ -25,20 +25,29 @@ public class QuessHandler : MonoBehaviour {
 	public float timer = 0;
 	public float maxBintang3 = 10;
 	public float maxBintang2 = 20;
-	public int score;
+	public static int score;
 	public Text scoreText;
+
+	public GameObject popUpOver;
+	public GameObject love1;
+	public GameObject love2;
+	public GameObject love3;
+	public Text scoreOver;
+	public Text gameOver;
 
 	//Hearts
 	public Image heart1;
 	public Image heart2;
 	public Image heart3;
-	int nyawa = 3;
+	public static int nyawa = 3;
+	public GameObject nyawaIn;
 
 	void Start () {
 		nyawa = 3;
 		score = 0;
 		scoreText.text = "0";
 		popUp.SetActive (false);
+		popUpOver.SetActive (true);
 	}
 
 	void Update () {
@@ -50,6 +59,14 @@ public class QuessHandler : MonoBehaviour {
 			heart2.sprite = Resources.Load<Sprite> ("Sprites/UI/nyawa") as Sprite;
 		} else if (nyawa == 0) {
 			heart1.sprite = Resources.Load<Sprite> ("Sprites/UI/nyawa") as Sprite;
+			//gameover
+			love3.SetActive (false);
+			love2.SetActive (false);
+			love1.SetActive (false);
+			scoreOver.text = "0";
+			gameOver.text = "Belum Berhasil. Coba Lagi!";
+			nyawaIn.SetActive (true);
+			popUpOver.SetActive (true);
 		}
 
 
