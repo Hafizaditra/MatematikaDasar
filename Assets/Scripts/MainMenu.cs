@@ -30,6 +30,15 @@ public class MainMenu : MonoBehaviour {
 
 
 	void Start () {
+		Time.timeScale = 1;
 		popUp.SetActive (false);
+	}
+
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			for (int i = 0; i < 8; i++) {
+				PlayerPrefs.SetInt ("Level" + (i + 1).ToString (), 1);
+			}
+		}
 	}
 }

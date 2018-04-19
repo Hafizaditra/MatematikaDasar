@@ -29,4 +29,10 @@ public class LevelMenu : MonoBehaviour {
 	public void Character () {
 		SceneManager.LoadScene ("Characters");
 	}
+
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene ("MainMenu");
+		}
+	}
 }

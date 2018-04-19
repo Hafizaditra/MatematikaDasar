@@ -52,15 +52,21 @@
      <Compile Include="Assets\Scripts\EndGame.cs" />
      <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\GroundCollisionHandler.cs" />
-     <Compile Include="Assets\Scripts\JamurJatuh.cs" />
      <Compile Include="Assets\Scripts\Level.cs" />
      <Compile Include="Assets\Scripts\LevelMenu.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Misc_\JamurJatuh.cs" />
+     <Compile Include="Assets\Scripts\Misc_\MovingCharacter.cs" />
+     <Compile Include="Assets\Scripts\Misc_\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Misc_\MovingPlatformUp.cs" />
      <Compile Include="Assets\Scripts\QuessHandler.cs" />
      <Compile Include="Assets\Scripts\Splash.cs" />
      <Compile Include="Assets\Scripts\SwapingPlatform.cs" />
      <Compile Include="Assets\Scripts\helpabout.cs" />
+     <None Include="Assets\Resources\Sprites\Materi &amp; Soal\Soal\1\jawaban stage 1.txt" />
+     <None Include="Assets\Resources\Sprites\Materi &amp; Soal\Soal\2\jawaban stage 2.txt" />
+     <None Include="Assets\Resources\Sprites\Materi &amp; Soal\Soal\3\jawaban stage 3.txt" />
+     <None Include="Assets\Resources\Sprites\Materi &amp; Soal\Soal\4\jawaban stage 4.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity 5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

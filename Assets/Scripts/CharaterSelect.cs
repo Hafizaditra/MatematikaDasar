@@ -12,4 +12,9 @@ public class CharaterSelect : MonoBehaviour {
 		PlayerPrefs.SetInt ("PlayedChara", code);
 		SceneManager.LoadScene ("Level");
 	}
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene ("Level");
+		}
+	}
 }

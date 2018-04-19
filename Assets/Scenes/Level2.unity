@@ -3341,6 +3341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248198152}
   - component: {fileID: 248198153}
+  - component: {fileID: 248198154}
   m_Layer: 0
   m_Name: SnowMan
   m_TagString: Untagged
@@ -3356,7 +3357,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 248198151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.2300005, y: 1.4992955, z: 0}
+  m_LocalPosition: {x: 14.84, y: 1.4992955, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1733780355}
@@ -3404,6 +3405,17 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+--- !u!114 &248198154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248198151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bfc3930ee3d49c4dbe31599e455a85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271396733
 GameObject:
   m_ObjectHideFlags: 0
@@ -14056,6 +14068,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: soal.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: jawaban.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4491442015444746, guid: 78637b9eb985750499100fbd62a70276, type: 2}
       propertyPath: m_LocalPosition.x
       value: 46.97
@@ -14093,6 +14115,61 @@ Prefab:
       propertyPath: system
       value: 
       objectReference: {fileID: 1986974900}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: soal.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: a4c4bc895a044b6479719a9cd6aeb37d,
+        type: 3}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: soal.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 322353729f9e9624db7de602a490fbcb,
+        type: 3}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: jawaban.Array.data[3]
+      value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: jawaban.Array.data[4]
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: soal.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d807ca085b4ad24094949e534133252,
+        type: 3}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: soal.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: f5d8b51be4503554981a908674e9cbb1,
+        type: 3}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: soal.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: b35b1ae4945e3964fb8e34b7cac88144,
+        type: 3}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: jawaban.Array.data[0]
+      value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: jawaban.Array.data[1]
+      value: D
+      objectReference: {fileID: 0}
+    - target: {fileID: 114411832840651344, guid: 78637b9eb985750499100fbd62a70276,
+        type: 2}
+      propertyPath: jawaban.Array.data[2]
+      value: D
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78637b9eb985750499100fbd62a70276, type: 2}
   m_IsPrefabParent: 0
@@ -15536,6 +15613,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: soal.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: jawaban.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4244252793168386, guid: 5d629918b3d81404c9e2ce6cf16a4ff0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 56.8
@@ -15573,6 +15660,56 @@ Prefab:
       propertyPath: system
       value: 
       objectReference: {fileID: 1986974900}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: soal.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 71edc624f287aa24c838cb773868fd2f,
+        type: 3}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: soal.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: a4feedca0a49eb542b2d3eabc36b0ed8,
+        type: 3}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: jawaban.Array.data[3]
+      value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: jawaban.Array.data[4]
+      value: C
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: soal.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 56876ec0b4970d640b3723903d37d787,
+        type: 3}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: soal.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 99fe270d0170ea44892e75813f762be0,
+        type: 3}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: soal.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5bd028a2b18d51a4b825fe7dd4791460,
+        type: 3}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: jawaban.Array.data[1]
+      value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 114040411040179210, guid: 5d629918b3d81404c9e2ce6cf16a4ff0,
+        type: 2}
+      propertyPath: jawaban.Array.data[2]
+      value: D
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d629918b3d81404c9e2ce6cf16a4ff0, type: 2}
   m_IsPrefabParent: 0
@@ -18118,6 +18255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1553727761}
   - component: {fileID: 1553727762}
+  - component: {fileID: 1553727763}
   m_Layer: 0
   m_Name: SnowMan (1)
   m_TagString: Untagged
@@ -18181,6 +18319,17 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
+--- !u!114 &1553727763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1553727760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bfc3930ee3d49c4dbe31599e455a85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1607231152
 Prefab:
   m_ObjectHideFlags: 0
@@ -18283,13 +18432,17 @@ MonoBehaviour:
   isDead: 0
   bubble: {fileID: 1171506453}
   soal:
-  - {fileID: 21300000, guid: 113215436732db940b77d47755a99da1, type: 3}
-  - {fileID: 21300000, guid: f7e44d32d6cc29d4d91355b437075031, type: 3}
-  - {fileID: 21300000, guid: 5da9815bfebc7fa46888313257899758, type: 3}
+  - {fileID: 21300000, guid: 422d71b2c01fcfa42a18286b1f4b749f, type: 3}
+  - {fileID: 21300000, guid: f397d12c6889dca42b06cd3d234a4093, type: 3}
+  - {fileID: 21300000, guid: c6ee3aa00d5ed924b90933796d35e4dd, type: 3}
+  - {fileID: 21300000, guid: 50426b4505e776349b261ed2d9144edd, type: 3}
+  - {fileID: 21300000, guid: 3ab52e3e77277a24a98f746c157c1113, type: 3}
   jawaban:
+  - A
   - B
   - A
-  - C
+  - A
+  - B
 --- !u!50 &1607231156
 Rigidbody2D:
   serializedVersion: 4
@@ -19290,6 +19443,8 @@ GameObject:
   - component: {fileID: 1726495837}
   - component: {fileID: 1726495838}
   - component: {fileID: 1726495839}
+  - component: {fileID: 1726495840}
+  - component: {fileID: 1726495841}
   m_Layer: 0
   m_Name: Crate (11)
   m_TagString: Ground
@@ -19378,6 +19533,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.01, y: 1.01}
   m_EdgeRadius: 0
+--- !u!114 &1726495840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726495836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e392fe3baf95b064c906fe95d3e9b2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1726495841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726495836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d603fb009939c3e49932e96869da03d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1733780354
 GameObject:
   m_ObjectHideFlags: 0
@@ -19562,6 +19739,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: soal.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: jawaban.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4959429066412776, guid: 9cdd1e66d4eeb5347a340f7cbe414715, type: 2}
       propertyPath: m_LocalPosition.x
       value: 28.15
@@ -19599,6 +19786,56 @@ Prefab:
       propertyPath: system
       value: 
       objectReference: {fileID: 1986974900}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: soal.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9b537767b62790d4ebe8813ec42ad1ad,
+        type: 3}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: soal.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c844968c620e9e44bd1c8feb33896d6,
+        type: 3}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: jawaban.Array.data[3]
+      value: D
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: jawaban.Array.data[4]
+      value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: soal.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: e8d53ca0d8addb14dbf75cf890e07821,
+        type: 3}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: soal.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 44c2e3d6adf2f6f40814a762f1ec792e,
+        type: 3}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: soal.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1cf2feb14fe3ce2468db2aee92c5ce4a,
+        type: 3}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: jawaban.Array.data[0]
+      value: A
+      objectReference: {fileID: 0}
+    - target: {fileID: 114633386695794348, guid: 9cdd1e66d4eeb5347a340f7cbe414715,
+        type: 2}
+      propertyPath: jawaban.Array.data[1]
+      value: B
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9cdd1e66d4eeb5347a340f7cbe414715, type: 2}
   m_IsPrefabParent: 0
@@ -21628,13 +21865,17 @@ MonoBehaviour:
   isDead: 0
   bubble: {fileID: 1262692651}
   soal:
-  - {fileID: 21300000, guid: 113215436732db940b77d47755a99da1, type: 3}
-  - {fileID: 21300000, guid: f7e44d32d6cc29d4d91355b437075031, type: 3}
-  - {fileID: 21300000, guid: 5da9815bfebc7fa46888313257899758, type: 3}
+  - {fileID: 21300000, guid: 84ae2d9e7539c5543b17023fa5b2eaa1, type: 3}
+  - {fileID: 21300000, guid: 855e8afe837864f498bee0b846466abc, type: 3}
+  - {fileID: 21300000, guid: b9f89cfa22ee2ad478548351094fcbee, type: 3}
+  - {fileID: 21300000, guid: a816e191f2f3f6341821f8879a12c864, type: 3}
+  - {fileID: 21300000, guid: f52ddd57166fc2f4d9cb4374a7ec2146, type: 3}
   jawaban:
-  - B
   - A
-  - C
+  - B
+  - D
+  - B
+  - D
 --- !u!50 &1938094253
 Rigidbody2D:
   serializedVersion: 4
@@ -23611,7 +23852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2115351139
 Transform:
   m_ObjectHideFlags: 0
@@ -23620,7 +23861,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2115351138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.43, y: 0.58, z: 0}
+  m_LocalPosition: {x: -0.03, y: 0.86, z: 0}
   m_LocalScale: {x: 0.62499994, y: 0.4347826, z: 0.2}
   m_Children: []
   m_Father: {fileID: 2001155082}

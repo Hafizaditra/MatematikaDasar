@@ -20,4 +20,10 @@ public class helpabout : MonoBehaviour {
 	public void Back () {
 		SceneManager.LoadScene ("MainMenu");
 	}
+
+	void Update () {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene ("MainMenu");
+		}
+	}
 }

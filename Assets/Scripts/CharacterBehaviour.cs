@@ -79,6 +79,15 @@ public class CharacterBehaviour : MonoBehaviour {
 		if (character.GetComponent<GroundCollisionHandler> ().onGround) {
 			jumpCount = 0;
 		}
+
+		if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 1) {
+			Time.timeScale = 0;
+			canvasPause.SetActive (true);
+		}
+		else if (Input.GetKeyDown(KeyCode.Escape) && Time.timeScale == 0) {
+			Time.timeScale = 1;
+			canvasPause.SetActive (false);
+		}
 	}
 
 	void FixedUpdate () {

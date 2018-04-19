@@ -12,8 +12,8 @@ public class SwapingPlatform : MonoBehaviour {
 		if (swaping) {
 			currentTime += Time.deltaTime;
 			if (currentTime >= swapTime) {
-				this.transform.localScale = new Vector3 (this.transform.localScale.x, Random.Range (2, 4), this.transform.localScale.z);
-				swapTime = Random.Range (0.2f, 1);
+				this.transform.localScale = new Vector3 (this.transform.localScale.x, Random.Range (0.5f, 0.8f), this.transform.localScale.z);
+				swapTime = 0.3f;
 				currentTime = 0;
 			}
 		}
